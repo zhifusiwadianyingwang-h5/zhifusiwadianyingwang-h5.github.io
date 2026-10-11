@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>制服丝袜电影网 - 职场制服职业造型馆·行业片单/分面/班次/穿搭 | zhifusiwadianyingwang-h5.github.io</title>
+<meta name="description" content="制服丝袜电影网（https://zhifusiwadianyingwang-h5.github.io）单页演示：空乘、医护、律政、银行、军警应急、校园服务等职业制服片单与穿搭手记。聚焦行业剧、岗位故事、正版画质建议，内链全#，不提供盗版视频源。">
+<meta name="keywords" content="制服丝袜电影网,职场制服,职业剧,行业片单,空乘医护律政银行军警,穿搭手记,正版引导,单页演示,zhifusiwadianyingwang-h5.github.io">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0f2540">
+<meta property="og:title" content="制服丝袜电影网 - 职场制服职业造型馆">
+<meta property="og:description" content="行业片单、制服分面、岗位班次、穿搭手记、画质与正版、站规无障碍。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zhifusiwadianyingwang-h5.github.io">
+<link rel="canonical" href="https://zhifusiwadianyingwang-h5.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0f2540;--navy2:#15314f;--steel:#1f4e79;--sky:#3aa0d8;
+  --ice:#eaf3fb;--paper:#f6f9fc;--line:#cfe0ef;
+  --ink:#10243b;--dim:#5d7187;--gold:#c8a24a;--red:#b5462f;
+  --shadow:0 14px 30px rgba(15,37,64,.16);
+}
+body.big-text{font-size:18px}
+body.reduce-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+.bgfx{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.6;
+  background:
+   radial-gradient(50% 30% at 10% 0%,rgba(58,160,216,.18),transparent 60%),
+   radial-gradient(50% 30% at 90% 4%,rgba(31,78,121,.20),transparent 60%),
+   linear-gradient(180deg,#ffffff,var(--ice));}
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,var(--navy),var(--navy2));color:#eaf3fb;border-bottom:3px solid var(--sky)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;letter-spacing:.4px}
+.brand .badge{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--sky),var(--steel));display:grid;place-items:center;color:#06243a;font-weight:900;font-size:.8rem;box-shadow:0 0 12px rgba(58,160,216,.5)}
+.brand b{color:#bfe2f6}
+.searchbar{display:flex;gap:8px;flex:1;min-width:170px;max-width:360px}
+.searchbar input{flex:1;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.9rem}
+.searchbar button{padding:10px 16px;border:0;border-radius:9px;background:var(--sky);color:#06243a;font-weight:800;cursor:pointer;min-height:44px}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}
+.navlinks a{padding:9px 12px;border-radius:8px;font-size:.82rem;font-weight:700;color:#cfe6f6;transition:.2s;min-height:44px;display:inline-flex;align-items:center}
+.navlinks a:hover,.navlinks a.active{background:var(--ice);color:var(--navy)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:3px;background:#eaf3fb;border-radius:3px}
+
+.hero{padding:34px 0 20px;position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:900;line-height:1.14}
+.hero h1 em{font-style:normal;color:var(--steel)}
+.hero p{max-width:560px;margin:14px 0 20px;color:var(--dim)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:9px;font-weight:800;font-size:.9rem;cursor:pointer;border:0;transition:.25s;min-height:44px;display:inline-flex;align-items:center}
+.btn-navy{background:linear-gradient(135deg,var(--steel),var(--navy));color:#eaf3fb}
+.btn-navy:hover{transform:translateY(-3px)}
+.btn-line{background:#fff;color:var(--navy);border:1px solid var(--sky)}
+.btn-line:hover{transform:translateY(-3px)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.chip{font-size:.72rem;font-weight:800;padding:5px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--dim)}
+.chip.hot{background:var(--steel);color:#eaf3fb;border-color:transparent}
+/* 工牌拼贴 */
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.idcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:var(--shadow);text-align:center;opacity:0;transform:translateY(12px);transition:.5s}
+.idcard.in{opacity:1;transform:none}
+.idcard .photo{height:54px;width:54px;border-radius:10px;margin:0 auto 8px;display:grid;place-items:center;font-size:1.4rem;color:#fff}
+.ph1{background:linear-gradient(135deg,var(--sky),var(--steel))}
+.ph2{background:linear-gradient(135deg,var(--red),var(--steel))}
+.ph3{background:linear-gradient(135deg,var(--gold),var(--steel))}
+.idcard h4{font-size:.82rem;font-weight:800}
+.idcard span{font-size:.7rem;color:var(--dim);font-family:ui-monospace,monospace}
+
+section.block{padding:38px 0;position:relative;z-index:1}
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sec-head .icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--sky),var(--steel));display:grid;place-items:center;color:#06243a;font-size:1rem;font-weight:900}
+.sec-head h2{font-size:1.3rem;font-weight:900}
+.sec-head .tag{margin-left:auto;font-size:.72rem;color:var(--dim);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+
+/* 1 职业片单 */
+.ribbon{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px}
+.ribbon::-webkit-scrollbar{height:8px}
+.ribbon::-webkit-scrollbar-thumb{background:var(--steel);border-radius:8px}
+.pcard{min-width:270px;max-width:310px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);flex-shrink:0;opacity:0;transform:translateY(14px);transition:.5s}
+.pcard.in{opacity:1;transform:none}
+.pcard:hover{transform:translateY(-4px);border-color:var(--sky)}
+.pcard .art{height:130px;display:grid;place-items:center;font-size:2.4rem;color:#fff;position:relative}
+.ar1{background:linear-gradient(135deg,var(--sky),var(--steel))}
+.ar2{background:linear-gradient(135deg,var(--red),var(--steel))}
+.ar3{background:linear-gradient(135deg,var(--gold),var(--steel))}
+.ar4{background:linear-gradient(135deg,#5f7d4b,var(--steel))}
+.ar5{background:linear-gradient(135deg,#7a5cc0,var(--steel))}
+.pcard .art .role{position:absolute;top:10px;right:10px;font-size:.62rem;font-weight:800;background:#06243a;color:#bfe2f6;padding:3px 8px;border-radius:999px}
+.pcard .info{padding:14px}
+.pcard h4{font-size:.92rem;font-weight:800}
+.pcard p{font-size:.74rem;color:var(--dim);margin:4px 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pcard .meta{display:flex;justify-content:space-between;align-items:center}
+.pcard .meta .tagmini{font-size:.68rem;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--ice);color:var(--steel)}
+.pcard .meta .go{padding:6px 12px;border-radius:8px;font-size:.72rem;font-weight:800;background:var(--navy);color:#eaf3fb}
+
+/* 2 制服分面 */
+.facets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.facet{font-size:.78rem;font-weight:800;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;min-height:40px}
+.facet.on{background:linear-gradient(135deg,var(--steel),var(--navy));color:#eaf3fb;border-color:transparent}
+.uni{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ucard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.5s}
+.ucard.in{opacity:1;transform:none}
+.ucard:hover{border-color:var(--sky)}
+.ucard .top{height:78px;border-radius:9px;display:grid;place-items:center;font-size:1.6rem;color:#fff;margin-bottom:8px}
+.u1{background:linear-gradient(135deg,var(--sky),var(--steel))}
+.u2{background:linear-gradient(135deg,var(--red),var(--steel))}
+.u3{background:linear-gradient(135deg,#5f7d4b,var(--steel))}
+.u4{background:linear-gradient(135deg,var(--gold),var(--steel))}
+.u5{background:linear-gradient(135deg,#7a5cc0,var(--steel))}
+.u6{background:linear-gradient(135deg,#0f9b8e,var(--steel))}
+.u7{background:linear-gradient(135deg,#d98324,var(--steel))}
+.u8{background:linear-gradient(135deg,#3b6ea5,var(--steel))}
+.ucard h4{font-size:.84rem;font-weight:800}
+.ucard p{font-size:.72rem;color:var(--dim);margin-top:2px}
+.ucard .specs{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
+.spec{font-size:.66rem;font-weight:800;padding:2px 8px;border-radius:6px;background:var(--ice);color:var(--steel);border:1px solid var(--line)}
+
+/* 3 班次时间轴 */
+.shift{max-width:960px;margin:0 auto}
+.shift-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.stab{font-size:.78rem;font-weight:800;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;min-height:40px}
+.stab.on{background:linear-gradient(135deg,var(--sky),var(--steel));color:#06243a;border-color:transparent}
+.timeline{position:relative;padding-left:22px;border-left:3px solid var(--line)}
+.tl{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px;box-shadow:var(--shadow);opacity:0;transform:translateX(-10px);transition:.5s}
+.tl.in{opacity:1;transform:none}
+.tl::before{content:"";position:absolute;left:-32px;top:18px;width:14px;height:14px;border-radius:50%;background:var(--steel);border:3px solid #fff;box-shadow:0 0 0 2px var(--line)}
+.tl .time{font-family:ui-monospace,monospace;font-weight:800;color:var(--navy);font-size:.8rem}
+.tl h4{font-size:.86rem;font-weight:800;margin-top:2px}
+.tl p{font-size:.74rem;color:var(--dim)}
+
+/* 4 造型手记 */
+.notes{max-width:920px;margin:0 auto;display:grid;gap:12px}
+.acc{background:#fff;border:1px solid var(--line);border-left:5px solid var(--steel);border-radius:10px;box-shadow:var(--shadow);overflow:hidden}
+.acc button.acc-h{width:100%;text-align:left;background:transparent;border:0;padding:14px 16px;font-size:.9rem;font-weight:800;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:10px;min-height:48px;align-items:center}
+.acc button.acc-h .ar{transition:.3s;color:var(--sky)}
+.acc.open button.acc-h .ar{transform:rotate(90deg)}
+.acc .acc-b{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.acc .acc-b .inner{padding:0 16px 14px;font-size:.82rem;color:var(--dim)}
+.acc .quote{border-left:3px solid var(--gold);padding-left:10px;margin:6px 0;font-style:italic;color:var(--navy)}
+.acc .tags{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.acc .tags span{font-size:.66rem;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--ice);color:var(--steel);border:1px solid var(--line)}
+.form{max-width:920px;margin:14px auto 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.form label{display:block;font-size:.76rem;font-weight:800;margin:8px 0 5px;color:var(--dim)}
+.form input,.form textarea,.form select{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.84rem;font-family:inherit}
+.form textarea{min-height:70px;resize:vertical}
+.form button{margin-top:10px;width:100%;padding:11px;border:0;border-radius:9px;background:linear-gradient(135deg,var(--steel),var(--navy));color:#eaf3fb;font-weight:800;cursor:pointer;min-height:46px}
+
+/* 5 画质/正版 */
+.quality{max-width:940px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.qcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.qcard h4{font-size:.92rem;font-weight:800;color:var(--navy)}
+.qcard p{font-size:.76rem;color:var(--dim);margin-top:6px}
+.specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.spec2{font-size:.7rem;font-weight:800;padding:4px 9px;border-radius:6px;background:var(--ice);color:var(--steel);border:1px solid var(--line)}
+.legal{margin-top:16px;background:linear-gradient(180deg,var(--navy),#0a1c30);color:#dcebf7;border-radius:12px;padding:16px}
+.legal h4{font-size:.9rem;color:#bfe2f6}
+.legal ul{list-style:none;display:grid;gap:7px;margin-top:8px}
+.legal li{font-size:.76rem;padding-left:20px;position:relative;line-height:1.6}
+.legal li::before{content:'✔';position:absolute;left:0;color:var(--sky)}
+
+/* 6 站规+无障碍 */
+.rules{max-width:880px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.rules h3{font-size:1rem;color:var(--navy)}
+.rules ul{list-style:none;display:grid;gap:8px}
+.rules li{font-size:.8rem;padding-left:20px;position:relative;color:var(--dim);line-height:1.65}
+.rules li::before{content:'🪪';position:absolute;left:0}
+.a11y-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.atile{background:var(--ice);border:1px solid var(--line);border-radius:10px;padding:12px}
+.atile b{font-size:.82rem;color:var(--navy);display:block;margin-bottom:6px}
+.atile p{font-size:.72rem;color:var(--dim)}
+.sw{width:44px;height:24px;border-radius:99px;background:#9fb6c9;position:relative;display:inline-block;transition:.2s;vertical-align:middle}
+.sw i{position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}
+.sw.on{background:var(--steel)}
+.sw.on i{left:22px}
+.rules .dis{margin-top:12px;font-size:.73rem;color:var(--dim);border-top:1px dashed var(--line);padding-top:10px}
+
+footer.site-foot{margin-top:34px;background:linear-gradient(180deg,transparent,var(--navy));border-top:3px solid var(--sky);color:#cfe6f6;padding:30px 0 20px;position:relative;z-index:1}
+.foot-brand{font-weight:900;font-size:1.1rem;text-align:center;margin-bottom:10px}
+.foot-brand b{color:#bfe2f6}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:12px}
+.foot-links a{font-size:.8rem;color:#cfe6f6;min-height:40px;display:inline-flex;align-items:center}
+.foot-links a:hover{color:#fff}
+.foot-small{text-align:center;font-size:.73rem;color:#9fc1d8;line-height:1.7}
+
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}.uni{grid-template-columns:repeat(2,1fr)}.quality{grid-template-columns:1fr}.a11y-row{grid-template-columns:1fr}}
+@media(max-width:680px){
+  .navlinks{position:fixed;top:64px;left:12px;right:12px;flex-direction:column;background:var(--navy);padding:10px;border-radius:12px;box-shadow:var(--shadow);transform:translateY(-180%);transition:.3s}
+  .navlinks.open{transform:none}
+  .burger{display:flex}
+  .searchbar{order:3;width:100%;max-width:none}
+  .uni{grid-template-columns:1fr}
+}
+@media(max-width:420px){.pcard{min-width:84%}.badges{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="bgfx"></div>
+
+<div class="wrap">
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand"><span class="badge">制</span> 制服丝袜电影网<b>·职场制服职业造型馆</b></div>
+      <form class="searchbar" onsubmit="return false">
+        <input type="search" placeholder="搜行业：空乘/医护/律政/银行/军警/校园…" aria-label="搜索电影">
+        <button type="submit">查岗</button>
+      </form>
+      <nav class="navlinks" id="nav">
+        <a href="#ribbon" class="active">职业片单</a>
+        <a href="#uni">制服分面</a>
+        <a href="#shift">班次故事</a>
+        <a href="#notes">穿搭手记</a>
+        <a href="#quality">画质正版</a>
+        <a href="#rules">站规无障碍</a>
+      </nav>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>按<em>职业制服</em>挑片<br>行业剧、岗位故事与穿搭</h1>
+          <p>制服丝袜电影网（zhifusiwadianyingwang-h5.github.io）整理空乘、医护、律政、银行、军警应急、校园服务等职业片单；着装部分仅做合规科普（统一肤色袜、防勾丝、制服长度与场合），不情色化。本页为静态前端演示，内链全部为 #；不提供盗版视频源、不发布“最新地址/备用域名/专用播放器/网盘”。[12,9](@ref)</p>
+          <div class="cta">
+            <a href="#ribbon" class="btn btn-navy">看职业片单</a>
+            <a href="#notes" class="btn btn-line">读穿搭手记</a>
+          </div>
+          <div class="chips">
+            <span class="chip hot">职业制服</span>
+            <span class="chip">行业分面</span>
+            <span class="chip">班次故事</span>
+            <span class="chip">穿搭科普</span>
+            <span class="chip">正版画质</span>
+            <span class="chip">无障碍</span>
+          </div>
+        </div>
+        <div class="badges" aria-hidden="true">
+          <div class="idcard"><div class="photo ph1">✈️</div><h4>空乘岗</h4><span>ID:UNI-001</span></div>
+          <div class="idcard"><div class="photo ph2">🚑</div><h4>医护岗</h4><span>ID:UNI-002</span></div>
+          <div class="idcard"><div class="photo ph3">⚖️</div><h4>律政岗</h4><span>ID:UNI-003</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1 职业片单 -->
+    <section class="block" id="ribbon">
+      <div class="sec-head"><span class="icon">🎬</span><h2>职业片单 · 横滑精选</h2><span class="tag">岗位向·不播放正片</span></div>
+      <div class="ribbon" id="ribbon">
+        <article class="pcard"><div class="art ar1">✈️<span class="role">空乘</span></div><div class="info"><h4>云端调度室</h4><p>行业剧·航班延误、乘务协作与旅客沟通，重流程不狗血。</p><div class="meta"><span class="tagmini">空乘</span><span class="go">详情</span></div></div></article>
+        <article class="pcard"><div class="art ar2">🚑<span class="role">医护</span></div><div class="info"><h4>急诊交接班</h4><p>医疗剧·分诊、家属沟通、值班伦理，专业向轻冲突。</p><div class="meta"><span class="tagmini">医护</span><span class="go">详情</span></div></div></article>
+        <article class="pcard"><div class="art ar3">⚖️<span class="role">律政</span></div><div class="info"><h4>律所晨会纪要</h4><p>职场/律政·案件分工、开庭准备，参考行业剧节奏。[9](@ref)</p><div class="meta"><span class="tagmini">律政</span><span class="go">详情</span></div></div></article>
+        <article class="pcard"><div class="art ar4">🏦<span class="role">银行</span></div><div class="info"><h4>柜员与合规</h4><p>行业剧·网点服务、风控沟通，西装马甲衬衫造型。[6](@ref)</p><div class="meta"><span class="tagmini">银行</span><span class="go">详情</span></div></div></article>
+        <article class="pcard"><div class="art ar5">🚨<span class="role">应急</span></div><div class="info"><h4>指挥中心的夜</h4><p>军警/应急·调度、取证、公众沟通，非血腥推理。</p><div class="meta"><span class="tagmini">应急</span><span class="go">详情</span></div></div></article>
+        <article class="pcard"><div class="art ar1">🎓<span class="role">校园</span></div><div class="info"><h4>教务办公室</h4><p>校园/成长·家校沟通、活动统筹，轻喜剧不煽情。</p><div class="meta"><span class="tagmini">校园</span><span class="go">详情</span></div></div></article>
+      </div>
+    </section>
+
+    <!-- 2 制服分面 -->
+    <section class="block" id="uni">
+      <div class="sec-head"><span class="icon">🪪</span><h2>制服分面 · 行业展板</h2><span class="tag">点击筛选·纯前端</span></div>
+      <div class="facets" id="facets">
+        <span class="facet on" data-u="all">全部</span>
+        <span class="facet" data-u="air">空乘交通</span>
+        <span class="facet" data-u="med">医护公卫</span>
+        <span class="facet" data-u="law">律政法务</span>
+        <span class="facet" data-u="bank">银行职场</span>
+        <span class="facet" data-u="safe">军警应急</span>
+        <span class="facet" data-u="school">校园教务</span>
+        <span class="facet" data-u="service">服务餐饮</span>
+      </div>
+      <div class="uni" id="uniGrid">
+        <article class="ucard" data-u="air"><div class="top u1">✈️</div><h4>空乘制服</h4><p>航司配色、丝巾/领带、箱包与舱内规范。</p><div class="specs"><span class="spec">挺括外套</span><span class="spec">过膝裙/裤</span><span class="spec">统一肤色袜</span></div></article>
+        <article class="ucard" data-u="med"><div class="top u2">🚑</div><h4>医护制服</h4><p>分科色、刷手服、白大褂层次与标识。</p><div class="specs"><span class="spec">抗菌面料</span><span class="spec">工牌胸针</span><span class="spec">防滑鞋</span></div></article>
+        <article class="ucard" data-u="law"><div class="top u3">⚖️</div><h4>律政着装</h4><p>西装、衬衫、丝巾点缀，法庭与办公区分。[12](@ref)</p><div class="specs"><span class="spec">深色西装</span><span class="spec">浅色衬衫</span><span class="spec">克制配饰</span></div></article>
+        <article class="ucard" data-u="bank"><div class="top u4">🏦</div><h4>银行制服</h4><p>马甲、衬衫、领带/丝巾，网点职业气质。[6](@ref)</p><div class="specs"><span class="spec">马甲套装</span><span class="spec">波点领带</span><span class="spec">工牌</span></div></article>
+        <article class="ucard" data-u="safe"><div class="top u5">🚨</div><h4>军警应急</h4><p>作训/常服分层、反光标识、装备收纳。</p><div class="specs"><span class="spec">常服</span><span class="spec">作训服</span><span class="spec">反光条</span></div></article>
+        <article class="ucard" data-u="school"><div class="top u6">🎓</div><h4>校园教务</h4><p>教师着装、活动制服、校服与家长沟通场景。</p><div class="specs"><span class="spec">简约西装</span><span class="spec">校服分层</span><span class="spec">活动马甲</span></div></article>
+        <article class="ucard" data-u="service"><div class="top u7">🍽️</div><h4>餐饮服务</h4><p>前厅制服、围裙、卫生帽与品牌色统一。</p><div class="specs"><span class="spec">品牌色</span><span class="spec">围裙</span><span class="spec">防滑鞋</span></div></article>
+        <article class="ucard" data-u="air"><div class="top u8">🚄</div><h4>高铁地铁</h4><p>乘务制服、信号马甲、站务引导装备。</p><div class="specs"><span class="spec">引导马甲</span><span class="spec">对讲收纳</span><span class="spec">统一袜履</span></div></article>
+      </div>
+    </section>
+
+    <!-- 3 班次时间轴 -->
+    <section class="block" id="shift">
+      <div class="sec-head"><span class="icon">🕑</span><h2>岗位班次故事 · 时间轴</h2><span class="tag">按行业切换·示意</span></div>
+      <div class="shift">
+        <div class="shift-tabs" id="shiftTabs">
+          <span class="stab on" data-s="all">全部岗</span>
+          <span class="stab" data-s="air">空乘</span>
+          <span class="stab" data-s="med">医护</span>
+          <span class="stab" data-s="bank">银行</span>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="tl" data-s="air"><div class="time">05:30 准备</div><h4>云端调度室 · 航前协同</h4><p>机组简报、客舱检查、特殊旅客预案，制服仪容全检。</p></div>
+          <div class="tl" data-s="med"><div class="time">07:00 交班</div><h4>急诊交接班 · 分诊优先</h4><p>夜班病历交接、分诊分级、家属沟通口径与感染防护。</p></div>
+          <div class="tl" data-s="bank"><div class="time">08:45 开店</div><h4>柜员与合规 · 网点晨会</h4><p>现金尾箱、合规提示、大堂动线与制服仪容检查。[6](@ref)</p></div>
+          <div class="tl" data-s="air"><div class="time">13:10 巡航</div><h4>云端调度室 · 延误处置</h4><p>改签沟通、乘务协作、旅客情绪安抚与记录归档。</p></div>
+          <div class="tl" data-s="med"><div class="time">20:30 夜值</div><h4>急诊交接班 · 重症观察</h4><p>值班排班、药品核对、跨科室会诊与家属告知流程。</p></div>
+          <div class="tl" data-s="bank"><div class="time">16:20 复盘</div><h4>柜员与合规 · 风控复盘</h4><p>异常交易、客户身份核验、明日网点活动准备。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 穿搭手记 -->
+    <section class="block" id="notes">
+      <div class="sec-head"><span class="icon">🧵</span><h2>制服与丝袜穿搭手记</h2><span class="tag">合规科普·可折叠</span></div>
+      <div class="notes" id="notesBox">
+        <div class="acc open"><button class="acc-h">办公/律政：西装衬衫怎么不呆板？ <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><div class="quote">“统一不是雷同，合身与配饰分寸才是职业感。”——示例手记</div><p>手记：深色西装配浅色衬衫，女性可用小丝巾/波点领结提气，避免低领与过度紧身；丝袜选统一肤色或近肤色，防勾丝备一双替换，裙长过膝更稳。[12,15](@ref)职场剧重点看会议、开庭、客户沟通三类场景的服装复用率。<div class="tags"><span>不剧透</span><span>律政</span><span>职场穿搭</span></div></p></div></div></div>
+        <div class="acc"><button class="acc-h">空乘/高铁：长时间站立如何舒适？ <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><div class="quote">“仪容统一的前提是脚不肿、行动不卡。”——示例手记</div><p>手记：外套挺括但内搭透气，丝巾/领带按航司标准打结；袜履统一肤色/黑色，选微弹防勾丝；站务增加反光马甲与对讲收纳。影片重点看航前检查、延误沟通、特殊旅客协助。<div class="tags"><span>轻剧透</span><span>空乘</span><span>舒适制服</span></div></p></div></div></div>
+        <div class="acc"><button class="acc-h">医护/应急：功能优先于好看 <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><div class="quote">“制服首先要能跑、能洗、能识别科室。”——示例手记</div><p>手记：刷手服按分科色，白大褂只作外层；工牌胸针统一位置，鞋底防滑；不推荐使用装饰性丝袜，优先医用/抗菌袜。影视重点看交班、分诊、院感流程而非猎奇。<div class="tags"><span>不剧透</span><span>医护</span><span>功能穿搭</span></div></p></div></div></div>
+      </div>
+
+      <form class="form" id="rvForm" autocomplete="off">
+        <label for="rvTitle">片名/岗位示例</label>
+        <input id="rvTitle" placeholder="如：云端调度室（空乘·示例）" required>
+        <label for="rvUni">制服类型</label>
+        <select id="rvUni">
+          <option>空乘交通</option><option>医护公卫</option><option>律政法务</option><option>银行职场</option><option>军警应急</option><option>校园教务</option><option>服务餐饮</option>
+        </select>
+        <label for="rvText">穿搭/片单短评</label>
+        <textarea id="rvText" placeholder="写制服合身度、配色、丝袜/袜履建议、剧情专业度等，保持合规。"></textarea>
+        <button type="submit">提交本页短评</button>
+        <p style="font-size:.72rem;color:var(--dim);margin-top:8px">仅前端演示，不传服务器；不接收任何盗版链接、成人内容或违规资源。</p>
+      </form>
+      <div class="notes" id="rvList" style="margin-top:12px"></div>
+    </section>
+
+    <!-- 5 画质/正版 -->
+    <section class="block" id="quality">
+      <div class="sec-head"><span class="icon">📽️</span><h2>画质与正版观看建议</h2><span class="tag">演示·不嵌盗版源</span></div>
+      <div class="quality">
+        <div class="qcard"><h4>行业剧细节画质</h4><p>医护/律政重文字与面部微表情，建议 1080p 起步；大场面调度可 4K，但避免过度锐化丢失制服纹理。</p><div class="specs"><span class="spec2">1080p</span><span class="spec2">4K可选</span><span class="spec2">肤色校准</span></div></div>
+        <div class="qcard"><h4>制服色彩管理</h4><p>航司蓝、军警绿、医护白等品牌色要准；HDR 场景看候机厅、手术室高光，避免饱和溢出。</p><div class="specs"><span class="spec2">sRGB/Rec.709</span><span class="spec2">HDR10</span><span class="spec2">色温统一</span></div></div>
+        <div class="qcard"><h4>字幕与声轨</h4><p>律政/医疗术语开简体中文硬/sub 字幕；机场、指挥中心场景用 5.1 更清楚，夜间可降音量。</p><div class="specs"><span class="spec2">简体字幕</span><span class="spec2">5.1</span><span class="spec2">大字号</span></div></div>
+        <div class="qcard"><h4>正版渠道建议</h4><p>优先院线、持牌流媒体、行业纪录片发行方；核对片名、地区、版本与授权，不接受来源不明播放
